@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>Voyage Z</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale =1">
+</head>
+<body>
+    <section class="banner">
+        <a href="index.html"><p class="logo">Voyage|Z</p></a>
+        <div class="banner-text">
+            <h1>Unknown Voyages</h1>
+            <p>Pushing the boundaries of space</p>
+            <div class="mid_buttons">
+                <a href="contact.html">Contact Us</a>
+                <a href="shop.html">Merchandise</a>
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apollo.html">Apollo Mission</a></li>
+            <li><a href="mars.html">Mars Mission</a></li>
+            <li><a href="next.html">Whats Next</a></li>
+            <li><a href="astronautprofile.html">Our Astronauts</a></li>
+            <li><a href="shop.html">Merchandise</a></li>
+            <li><a href="contact.html">Contact us</a></li>   
+        </ul>
+        </nav>
+    </div>
+    <div id="menubutton">
+        <img src="images/ham.png" id="menu">
+    </div>
+
+    <script>
+        var menubutton = document.getElementById("menubutton")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+
+        menubutton.onclick = function() {
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px"
+                menu.src = "images/ham.png"
+            }
+        }
+    </script>
+    <div class="Apollo">
+        <h1>Apollo 11</h1>
+        <p>Apollo 11 was the first manned mission to land on the Moon. The first steps by humans on another planetary body were taken by Neil Armstrong and Buzz Aldrin on July 20, 1969. The astronauts also returned to Earth the first samples from another planetary body. Apollo 11 achieved its primary mission - to perform a manned lunar landing and return the mission safely to Earth - and paved the way for the Apollo lunar landing missions to follow.</p>
+        <a href="apollo.html">Learn More</a>
+    </div>
+    <div class="Mars">
+        <h1>Mars Colonization</h1>
+        <p>At an average distance of 140 million miles, Mars is one of Earth's closest habitable neighbors. Mars is about half again as far from the Sun as Earth is, so it still has decent sunlight. It is a little cold, but we can warm it up. Its atmosphere is primarily CO2 with some nitrogen and argon and a few other trace elements, which means that we can grow plants on Mars just by compressing the atmosphere. Gravity on Mars is about 38% of that of Earth, so you would be able to lift heavy things and bound around. Furthermore, the day is remarkably close to that of Earth.</p>
+        <a href="mars.html">Learn More</a>
+    </div>
+    <div class="next">
+        <h1>What's Next?</h1>
+        <p>The sky is no longer the limit! The real limit is our imagination, humans will soon set foot on mars, and colonize it. The impossible is slowly becomming possible. Our laws of physics will be broken once humanity colonizes the universe. New planets and galaxies shall present new laws and new oppurtunities for the human race. Extra terrestrial life might be discovered, and the fight for power might begin. It all starts right here and now, with a simple dream to discover the unknown, and dare to be where no one has ever been.</p>
+        <a href="next.html">Learn More</a>
+    </div>
+
+    
+</body>
+<footer>
+    <div class="footer-wrapper">
+       <div class="footer-col1">
+            <p> Call us: 076 890 89 89</p>
+            <p>For more info: info@voyagez.com</p>
+            <p>&#169 Copyright 2021</p>
+       </div>
+       <div class="socials">
+            <a href="index.html"><h1>Voyage|Z</h1></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-logo.png"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.png"></a>
+       </div>
+       <div class="customer-form">
+            <h3>Sign up for our Newsletter!</h3>
+            <form>
+            <label for="email"></label><br>
+            <input type="text" placeholder="joe@outlook.com"><br>
+            <button type="submit">Notify me</button>
+            </form>
+        </div>
+    </div>
+</footer>
+</html>

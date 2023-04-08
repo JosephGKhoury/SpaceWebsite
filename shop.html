@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Voyage Z</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale =1">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apollo.html">Apollo Mission</a></li>
+            <li><a href="mars.html">Mars Mission</a></li>
+            <li><a href="next.html">Whats Next</a></li>
+            <li><a href="astronautprofile.html">Our Astronauts</a></li>
+            <li><a href="shop.html">Merchandise</a></li>
+            <li><a href="contact.html">Contact us</a></li>   
+        </ul>
+        </nav>
+    </div>
+    <div id="menubutton">
+        <img src="images/ham.png" id="menu">
+    </div>
+    <script>
+        var menubutton = document.getElementById("menubutton")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+
+        menubutton.onclick = function() {
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px"
+                menu.src = "images/ham.png"
+            }
+        }
+    </script>
+    <div class="shop_front">
+        <div class="shop_front_text">
+        <h1>Voyage Z Shop</h1>
+        <p>Shop authentic merchandise from us in support of our various missions and expeditions.</p>
+        <a href="#shop_background">Shop</a>
+        </div>
+    </div>
+    <div class="preproducts_page">
+        <div class="preproducts_page_text">
+            <h1>Our products</h1>
+            <p>Browse our rich variety of Merchandise</p>
+        </div>
+    </div>
+    <div id="shop_background">
+        <div class="shop_profile1">
+            <h2 class="section_header">Women's</h2>
+            <a href="womensproducts.html"><button>View Products</button></a>
+        </div>
+        <div class="shop_profile2">
+            <h2 class="section_header">Men's</h2>
+            <a href="menproducts.html"><button>View Products</button></a>
+        </div>
+        <div class="shop_profile3">
+            <h2 class="section_header">Todler's</h2>
+            <a href="todlerproducts.html"><button>View Products</button></a>
+        </div>
+    </div>
+
+    
+    
+</body>
+<footer>
+    <div class="footer-wrapper">
+       <div class="footer-col1">
+            <p> Call us: 076 890 89 89</p>
+            <p>For more info: info@voyagez.com</p>
+            <p>&#169 Copyright 2021</p>
+       </div>
+       <div class="socials">
+            <a href="index.html"><h1>Voyage|Z</h1></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-logo.png"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.png"></a>
+       </div>
+       <div class="customer-form">
+            <h3>Sign up for our Newsletter!</h3>
+            <form>
+            <label for="email"></label><br>
+            <input type="text" placeholder="joe@outlook.com"><br>
+            <button type="submit">Notify me</button>
+            </form>
+        </div>
+    </div>
+</footer>
+</html>

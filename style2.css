@@ -1,0 +1,1332 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+.banner {
+    background: url(images/space5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    transition: background 2s;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.banner:hover {
+    background: url(images/rocket.jpg);
+    background-size: cover;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 7%;
+    color: white;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.banner-text {
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+
+.banner-text h1 {
+    font-size: 110px;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 70px;
+}
+
+.mid_buttons a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: 0.5px solid white;
+}
+
+.mid_buttons a:hover {
+    background-color: white;
+    color: black;
+}
+
+@media all and (max-width: 500px) {
+    .banner:hover {
+        background-position: center;
+    }
+
+    .banner-text h1 {
+        font-size: 50px;
+        padding-bottom: 15px;
+    }
+}
+
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: rgb(97, 94, 94);
+    z-index: 2;  
+    transition: 1s;
+    border-radius: 20px 0px 0px 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#menubutton {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menubutton img {
+    width: 25px;
+    margin-top: 15px;
+}
+
+.Apollo {
+    height: 100vh;
+    background: url(images/apollo11.jpg);
+    background-size: cover;
+    transition: 1s ease-in-out;
+}
+
+
+.Apollo h1 {
+    padding-left: 30px;
+    color: white;
+    font-size: 60px;
+    padding-top: 250px;
+}
+
+.Apollo p {
+    color: white;
+    padding: 40px;
+    padding-left: 30px;
+    padding-right: 60%;
+    line-height: 1.5;
+}
+
+.Apollo a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    border: 0.5px solid white;
+    padding: 15px;
+    margin-left: 40px;
+}
+
+.Apollo a:hover {
+    background-color: white;
+    color: black;
+}
+
+.Apollo:hover {
+    background: url(images/space1.jpg);
+    background-size: cover;
+}
+
+@media all and (max-width: 800px) {
+    .Apollo {
+        background-position: center;
+    }
+
+    .Apollo:hover {
+        background-position: center;
+    }
+
+    .Apollo h1 {
+        font-size: 50px;
+        text-align: left;
+        padding-top: 25px;
+    }
+
+    .Apollo p {
+        padding: 230px 90px 30px 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .Apollo a {
+        margin-left: 10px;
+    }
+}
+
+.Mars {
+    height: 100vh;
+    background: url(images/back4.jpg);
+    background-size: cover;
+    transition: .5s ease-in-out;
+}
+
+.Mars h1 {
+    padding-left: 30px;
+    color: white;
+    font-size: 60px;
+    padding-top: 220px;
+}
+
+.Mars p {
+    color: white;
+    padding: 40px;
+    padding-left: 30px;
+    padding-right: 60%;
+    line-height: 1.5;
+}
+
+.Mars a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    border: 0.5px solid white;
+    padding: 15px;
+    margin-left: 40px;
+}
+
+.Mars a:hover {
+    background-color: white;
+    color: black;
+}
+
+.Mars:hover {
+    background: url(images/back3.jpg);
+    background-size: cover;
+    transition: 3s;
+}
+
+@media all and (max-width: 800px) {
+    .Mars {
+        background-position: center;
+    }
+
+    .Mars:hover {
+        background-position: center;
+    }
+
+    .Mars h1 {
+        font-size: 50px;
+        text-align: left;
+        padding-top: 25px;
+    }
+
+    .Mars p {
+        padding: 190px 90px 30px 15px;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+    .Mars a {
+        margin-left: 10px;
+    }
+}
+
+.next {
+    height: 100vh;
+    background: url(images/orbit.jpg);
+    background-size: cover;
+    transition: .5s ease-in-out;
+}
+
+.next h1 {
+    padding-left: 30px;
+    color: white;
+    font-size: 60px;
+    padding-top: 250px;
+}
+
+.next p {
+    color: white;
+    padding: 40px;
+    padding-left: 30px;
+    padding-right: 60%;
+    line-height: 1.5;
+}
+
+.next a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    border: 0.5px solid white;
+    padding: 15px;
+    margin-left: 40px;
+}
+
+.next a:hover {
+    background-color: white;
+    color: black;
+}
+
+.next:hover {
+    background: url(images/mars1.jpg);
+    background-size: cover;
+    transition: 3s;
+}
+
+@media all and (max-width: 900px) {
+    .next {
+        background-position: center;
+        
+    }
+
+    .next:hover {
+        background-position: center;
+    }
+
+    .next h1 {
+        font-size: 50px;
+        text-align: left;
+        padding-top: 25px;
+    }
+
+    .next p {
+        padding: 190px 90px 30px 15px;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+    .next a {
+        margin-left: 10px;
+    }
+}
+
+footer {
+    height: 200px;
+    background: rgb(48, 47, 47);
+}
+
+.footer-col1 {
+    width: 33.33%;
+}
+
+footer h1 {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer p {
+    color: white;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.socials {
+    width: 33.33%;
+    text-align: center;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials img {
+    width: 30px;
+    margin: 20px;
+    padding-top: 70px;
+    
+}
+
+.socials h1 {
+    padding-top: 20px;
+}
+
+.customer-form {
+    width: 33.33%;
+    padding-top: 20px;
+}
+
+.customer-form button {
+    margin-top: 10px;
+    background: #4CAF50;
+    padding: 5px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+}
+
+.customer-form h3 {
+    color: white;
+}
+
+.footer-wrapper {
+    display: flex;
+}
+
+
+@media (max-width: 900px) {
+    footer {
+        height: 50vh;
+    }
+
+    footer h1 {
+        font-size: 40px;
+        text-align: left;
+        padding: 5px 0 5px 15px;
+    }
+
+    footer p {
+        font-size: 15px;
+        padding: 5px 0 5px 15px;
+    }
+
+    .socials img {
+        width: 20px;
+        margin: 10px;
+        padding-top: 200px;
+    }
+
+    .socials h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .footer-col1 {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 574px) {
+    footer {
+        height: 50vh;
+    }
+
+    footer h1 {
+        font-size: 40px;
+        text-align: left;
+        padding: 5px 0 5px 15px;
+    }
+
+    footer p {
+        font-size: 15px;
+        padding: 5px 0 5px 15px;
+    }
+
+    .socials img {
+        width: 15px;
+        margin: 10px;
+        padding-top: 200px;
+    }
+    
+    .footer-col1 {
+        padding-top: 20px;
+    }
+
+    .customer-form input {
+        width: 120px;
+    }
+}
+
+@media (max-width: 390px) {
+    footer {
+        height: 50vh;
+    }
+
+    footer h1 {
+        font-size: 40px;
+        text-align: left;
+        padding: 5px 0 5px 15px;
+    }
+
+    footer p {
+        font-size: 15px;
+        padding: 5px 0 5px 15px;
+    }
+
+    .socials img {
+        width: 10px;
+        margin: 5px;
+        padding-top: 200px;
+    }
+    
+    .footer-col1 {
+        padding-top: 20px;
+    }
+
+    .customer-form h3 {
+        font-size: 15px;
+    }
+
+    .customer-form input {
+        width: 120px;
+    }
+}
+
+.contact_page {
+    height: 100vh;
+    background: url(images/final1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact_page_text {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 60px;
+}
+
+.contact_page_text h1 {
+    font-size: 70px;
+}
+
+.contact_page form {
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-right: 80px;
+    background-color: transparent;
+    float: right;
+}
+
+.contact_page form img {
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+.contact_page input[type=text], select, textarea {
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+}
+
+.contact_page textarea {
+    padding-top: 10px;
+}
+
+.contact_page::placeholder {
+    color: white;
+}
+
+.contact_page button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact_page button:hover {
+    background-color: #45a049;
+}
+
+.form_text{
+    color: white;
+    padding-top: 30px;
+    float: left;
+    margin-left: 30px;
+}
+
+.form_text h5 {
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form_text h6 {
+    font-size: 25px;
+    padding-top: 20px;
+    text-decoration: underline;
+    text-decoration-color: #4CAF50;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .contact_page {
+        background-position: center;
+    }
+
+    .form_text {
+        display: none;
+    }
+
+    .contact_page{
+        margin-top: 0;
+    }
+
+    .contact_page form {
+        margin-right: 40px;
+    }
+
+    .contact_page input[type=text], select, textarea {
+        width: 80vw;
+        height: 30px;
+        
+    }
+}
+
+.apolloBG {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -5px;
+}
+
+.apollohome {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+}
+
+.apollohome h1 {
+    color: white;
+    font-size: 60px;
+    margin: 70px 30px;
+}
+
+.apollohome_lower {
+    margin-top: 200px;
+}
+
+.apollohome_lower p {
+    color: white;
+    padding: 40px;
+    padding-left: 30px;
+    padding-right: 70%;
+    line-height: 1.5;
+}
+
+.apollohome_lower a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    border: 0.5px solid white;
+    padding: 15px;
+    margin-left: 40px;
+}
+
+.apollohome_lower a:hover {
+    background-color: white;
+    color: black;
+}
+
+.apollo_arrow {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.apollo_text {
+    background-color: #031217;
+    column-count: 3;
+    column-rule-style: solid;
+    column-gap: 40px;
+    color: white;
+    padding: 40px;
+}
+
+#apollo_text_wrapper {
+    background: #031217;
+}
+
+#apollo_text_wrapper h1 {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+
+.apollo_route {
+    height: 100vh;
+    background: url(images/diagram1.jpg);
+    background-size: cover;
+}
+
+.next_route {
+    height: 100vh;
+    background: url(images/diagram2.jpg);
+    background-size: cover;
+}
+
+.mars_route {
+    height: 100vh;
+    background: url(images/diagram3.jpg);
+    background-size: cover;
+}
+
+@media all and (max-width: 800px) {
+    .apolloBG {
+        background-position: center;
+    }
+
+    .Mars:hover {
+        background-position: center;
+    }
+
+    .apollohome h1 {
+        font-size: 50px;
+        text-align: left;
+        padding-top: 25px;
+    }
+
+    .apollohome_lower p {
+        padding: 0 90px 30px 15px;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+    .apollohome_lower a {
+        margin-left: 15px;
+    }
+
+    .apollo_arrow {
+        display: none;
+    }
+
+    .apollo_text {
+        column-count: 1;
+    }
+
+    #apollo_text_wrapper h1 {
+        text-align: left;
+        padding-left: 38px;
+    }
+
+    .apollo_route {
+        background-position: center;
+    }
+}
+
+.astro_wrap {
+    height: 15vh;
+    text-align: center;
+    padding: 100px;
+    background: url(images/spaceback1.jpg);
+    background-size: cover;
+}  
+
+.astro_wrap h1 {
+    padding-bottom: 30px;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.astro_wrap p {
+    padding-bottom: 10px;
+    color: white;
+}
+
+#astro_background {
+    background: rgb(214, 216, 226);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.astro_profile1 {
+    margin: 30px 40px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    width: 250px;
+    display: inline-block;
+}
+
+.astro_profile1 img {
+    height: 250px;
+    width: 100%;
+}
+
+.astro_profile1 p {
+    padding-top: 10px;
+}
+
+.job_title {
+    color: grey;
+    padding-bottom: 5px;
+}
+
+.astro_profile1 button {
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background: rgb(68, 67, 67);
+    border: none;
+    cursor: pointer;
+}
+
+.astro_profile1 button:hover {
+    background-color: #555;
+}
+
+@media all and (max-width: 800px) {
+    .astro_wrap {
+        height: 100vh;
+        padding-left: 70px;
+    }
+
+    #astro_background {
+        display: inline-block;
+    }
+
+    .astro_profile1 {
+        margin-left: 30px;
+        width: 90%;
+    }
+
+    .astro_profile1 img {
+        height: 50%;
+        width: 100%;
+    }
+
+    
+}
+
+@media all and (max-width: 500px) {
+    .astro_wrap {
+        height: 100vh;
+        padding-left: 70px;
+    }
+
+    #astro_background {
+        display: inline-block;
+    }
+
+    .astro_profile1 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .astro_profile1 img {
+        height: 350px;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 390px) {
+    .astro_wrap {
+        height: 100vh;
+        padding-left: 70px;
+    }
+
+    #astro_background {
+        display: inline-block;
+    }
+
+    .astro_profile1 {
+        width: 80%;
+    }
+
+    .astro_profile1 img {
+        height: 350px;
+        width: 100%;
+    }
+}
+
+.shop_front {
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/shopback.jpg);
+    background-size: cover;
+    padding-left: 50px;
+}
+
+.shop_front_text {
+    padding-top: 200px;
+    color: white;
+}
+
+.shop_front_text h1 {
+    font-size: 90px;
+    padding-bottom: 30px;
+}
+
+.shop_front_text p {
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 60px;
+    padding-right: 800px;
+}
+
+.shop_front_text a {
+    border-radius: 12px;
+    padding: 10px 30px;
+    width: 120px;
+    font-size: 20px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+}
+
+.preproducts_page {
+    height: 20vh;
+    background: orange;
+}
+
+.preproducts_page_text {
+    text-align: center;
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.preproducts_page_text h1 {
+    padding-bottom: 10px;
+}
+
+.preproducts_page_text p {
+    font-style: italic;
+}
+
+#shop_background {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shop_profile1 {
+    width: 33.33%;
+    background: url(images/product2.jpg);
+    background-size: 600px 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+.shop_profile2 {
+    width: 33.33%;
+    background: url(images/product1.jpg);
+    background-size: 600px 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+.shop_profile3 {
+    width: 33.33%;
+    background: url(images/product3.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    
+}
+
+.section_header {
+    color: rgb(187, 179, 179);
+    margin-left: 40px;
+    margin-top: 350px;
+    font-size: 60px;
+}
+
+.shop_profile1 button {
+    border: none;
+    background-color: orange;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 20px 40px;
+    cursor: pointer;
+}
+
+.shop_profile2 button {
+    border: none;
+    background-color: orange;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 20px 40px;
+    cursor: pointer;
+}
+
+.shop_profile3 button {
+    border: none;
+    background-color: orange;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 20px 40px;
+    cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+    .shop_front {
+        background-position: center;
+    }
+
+    .shop_front_text h1 {
+        font-size: 60px;
+        padding-bottom: 100px;
+        text-align: left;
+    }
+
+    .shop_front_text p {
+        font-size: 20px;
+        font-style: italic;
+        padding-bottom: 60px;
+        padding-right: 100px;
+    }
+
+    #shop_background {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shop_profile1 {
+        width: 100vw;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .shop_profile2 {
+        width: 100vw;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .shop_profile3 {
+        width: 100vw;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.shop_nav {
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+    
+}
+
+.shop_nav_logo {
+    width: 250px;
+    height: 25px;
+}
+
+.shop_nav_logo h1 {
+    font-size: 35px;
+    margin-left: 40px;
+}
+
+.shop_nav ul {
+    margin-left: 400px;
+    
+}
+
+.shop_nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.shop_nav a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 20px;  
+}
+
+.shop_frontpage {
+    background: rgb(164, 164, 170);
+    padding-bottom: 20px;
+}
+
+.shop_frontpage_text h1 {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.shop_item {
+    height: 300px;
+    width: 350px;
+    margin: 40px;
+    display: inline-block;
+}
+
+.shop_item_specifics {
+    margin-top: 20px;
+}
+
+.shop_item_specifics h3 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.shop_item_image {
+    height: 350px;
+    width: 350px;
+    background: url(images/product2.jpg);
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.shop_item_image:hover{
+    background: url(images/product2.2.jpg);
+    background-size: cover;
+}
+
+.shop_item2 {
+    height: 300px;
+    width: 350px;
+    margin: 40px;
+    display: inline-block;
+}
+
+.shop_item_specifics2 {
+    margin-top: 20px;
+}
+
+.shop_item_specifics2 h3 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.shop_item_image2 {
+    height: 350px;
+    width: 350px;
+    background: url(images/product1.jpg);
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.shop_item_image2:hover{
+    background: url(images/product1.2.jpg);
+    background-size: cover;
+}
+
+.shop_item3 {
+    height: 300px;
+    width: 350px;
+    margin: 40px;
+    display: inline-block;
+}
+
+.shop_item_specifics3 {
+    margin-top: 20px;
+}
+
+.shop_item_specifics3 h3 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.shop_item_image3 {
+    height: 350px;
+    width: 350px;
+    background: url(images/product3.jpg);
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.shop_item_image3:hover{
+    background: url(images/product3.2.jpg);
+    background-size: cover;
+}
+
+@media all and (max-width: 1000px) {
+    .shop_nav {
+        height: 80vh;     
+    }
+    
+    .shop_nav ul {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        padding-top: 100px;
+    }
+    
+    .shop_nav li {
+        margin-top: 20px;
+    }
+
+    .shop_frontpage {
+        background: rgb(164, 164, 170);
+        padding-bottom: 20px;
+        display: inline-block;
+    }
+
+    .shop_item {
+        width: 90vw;
+        margin: 30px 0 10px 20px;
+    }
+    
+    .shop_item_image {
+        height: 90vh;
+        width: 90vw;
+        background-position: center;
+    }
+
+    .shop_item2 {
+        width: 90vw;
+        margin: 30px 0 10px 20px;
+    }
+    
+    .shop_item_image2 {
+        height: 90vh;
+        width: 90vw;
+        background-position: center;
+    }
+
+    .shop_item3 {
+        width: 90vw;
+        margin: 30px 0 10px 20px;
+    }
+    
+    .shop_item_image3 {
+        height: 90vh;
+        width: 90vw;
+        background-position: center;
+    }
+   
+}
+
+.small-container {
+    max-width: 100vw;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
+    background: darkkhaki;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single-product {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#ProductImg {
+    border-radius: 30px;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-product .col-2 img {
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.single-product .col-2 {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2-title {
+    color: gray;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    width: 300px;
+}
+
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product input {
+    width: 80px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid;
+}
+
+.single-product input:focus {
+    outline: none;
+}
+
+.single-product a {
+    text-decoration: none;
+}
+
+.single-product .fa {
+    color: orange;
+    margin-left: 10px;
+}
+
+.col-2 p {
+    columns: #555;
+}
+
+.product-btn {
+    display: inline-block;
+    background: orange;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.product-btn:hover {
+    background: #563434;
+}

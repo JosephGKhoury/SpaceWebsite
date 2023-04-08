@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <title>Voyage Z</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale =1">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apollo.html">Apollo Mission</a></li>
+            <li><a href="mars.html">Mars Mission</a></li>
+            <li><a href="next.html">Whats Next</a></li>
+            <li><a href="astronautprofile.html">Our Astronauts</a></li>
+            <li><a href="shop.html">Merchandise</a></li>
+            <li><a href="contact.html">Contact us</a></li>   
+        </ul>
+        </nav>
+    </div>
+    <div id="menubutton">
+        <img src="images/ham.png" id="menu">
+    </div>
+
+    <script>
+        var menubutton = document.getElementById("menubutton")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+
+        menubutton.onclick = function() {
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px"
+                menu.src = "images/ham.png"
+            }
+        }
+    </script>
+
+    <div class="shop_nav">
+        <div class="shop_nav_logo">
+            <a href="index.html"><h1>Voyage Z</h1></a>
+        </div>
+        <ul>
+            <li><a href="menproducts.html">Mens</a></li>
+            <li><a href="womensproducts.html">Womens</a></li>
+            <li><a href="todlerproducts.html">Todlers</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    </div>
+
+    <div class="small-container single-product">
+        <di class="row">
+            <div class="col-2">
+                <img src="images/product2.jpg" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/product2.2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product2.3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product2.4.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product2.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p class="col-2-title">Womens / T-Shirts</p>
+                <h1>Womens Voyage Z T-Shirts</h1>
+                <h4>$19.99</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>X Large</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                    <option>X Small</option>
+                </select>
+                <input type="number" value="1" min="0" max="199">
+                <a href="" class="product-btn">Add to Cart</a>
+                <h3>Product Details<i class="fa fa-indent"></i></h3>
+                <br>
+                <p>The perfect crew neck T-shirt, made sustainably with care for people and planet.
+                    <br>
+                    <br>
+                    - 100% Cotton, Organic and Fairtrade-certified
+                    <br>
+                    - Standard fit
+                    <br>
+                    - Crew neck
+                </p>
+            </div>
+        </di>
+    </div>
+
+
+</body>
+<footer>
+    <div class="footer-wrapper">
+       <div class="footer-col1">
+            <p> Call us: 076 890 89 89</p>
+            <p>For more info: info@voyagez.com</p>
+            <p>&#169 Copyright 2021</p>
+       </div>
+       <div class="socials">
+            <a href="index.html"><h1>Voyage|Z</h1></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-logo.png"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.png"></a>
+       </div>
+       <div class="customer-form">
+            <h3>Sign up for our Newsletter!</h3>
+            <form>
+            <label for="email"></label><br>
+            <input type="text" placeholder="joe@outlook.com"><br>
+            <button type="submit">Notify me</button>
+            </form>
+        </div>
+    </div>
+</footer>
+</html>

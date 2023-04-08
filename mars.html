@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <title>Voyage Z</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale =1">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apollo.html">Apollo Mission</a></li>
+            <li><a href="mars.html">Mars Mission</a></li>
+            <li><a href="next.html">Whats Next</a></li>
+            <li><a href="astronautprofile.html">Our Astronauts</a></li>
+            <li><a href="shop.html">Merchandise</a></li>
+            <li><a href="contact.html">Contact us</a></li>   
+        </ul>
+        </nav>
+    </div>
+    <div id="menubutton">
+        <img src="images/ham.png" id="menu">
+    </div>
+
+    <script>
+        var menubutton = document.getElementById("menubutton")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+
+        menubutton.onclick = function() {
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px"
+                menu.src = "images/ham.png"
+            }
+        }
+    </script>
+    <video class="apolloBG" poster="images/poster.jpg" autoplay muted loop>
+        <source src="images/mars vid.mp4" type="video/mp4">
+    </video>
+    <div class="apollohome">
+        <h1>The Future on Mars</h1>
+    <div class="apollohome_lower">
+        <p>The future on Mars looks bright! Many new space companies are taking the idea of "Mars Colonization" more seriously, and much work and money has been put to explore what life on Mars might look like.</p>
+        <a href="https://youtu.be/G3hPH_bc0Ww" target="#">Watch video</a>
+    </div>
+    <div class="apollo_arrow">
+        <a href="#apollo_text_wrapper"><img src="images/webb arrow.png"></a>
+    </div>
+    </div>
+    <div id="apollo_text_wrapper">
+        <h1>Background information</h1>
+        <div class="apollo_text">
+            <p>Robotic mining that can provide water and fuel is the key to developing a colony on the red planet within the next 30 years.
+
+                Mars will be colonized by humans by the year 2050, as long as autonomous mining processes quickly become more commercially viable.
+                
+                That’s the view of Professor Serkan Saydam from UNSW Sydney in the wake of the amazing landing on Mars by NASA’s Perseverance rover.
+                
+                Perseverance is expected to provide answers about whether forms of life ever existed on the red planet, but it is also designed to help address the challenges of future human expeditions there.
+                
+                Professor Saydam, from the School of Mineral Energy Resources Engineering, says the main focus in terms of creating a colony on Mars is finding water – and being able to extract it and process it using robots before humans land.
+                
+                “Everything is all about water,” Prof. Saydam says. “You use water as a life support, plus also being able to separate out the hydrogen to use as an energy source.
+                
+                “The process for having humans on Mars will be to set up operations, go there and produce water with robots first, and then be able to extract the hydrogen to make the energy ready before people arrive.
+                
+                “Innovation in robotics and autonomous systems are clearly important so that we have the water ready and the hydrogen separated and ready for when human beings land.
+                
+                “At the moment, we don’t have ability to do it. There are significant research efforts, specifically here at UNSW under ACSER (Australian Centre for Space Engineering Research), about the best way to do it, but there is no consensus yet. It also depends on how many people we expect to be living on Mars. Is it five, or 5000, or 50,000, or even more?” Entrepreneur Elon Musk has claimed he’s confident there will be a city of 1 million on Mars by 2050, transported there by 1000 Starships proposed by his SpaceX venture, with plans for up to three rocket launches per day.
+
+                Prof. Saydam says that may be unrealistic in the specific timeframe, but admits that demand for travel and a potential colonization of Mars is what’s needed to drive the technological developments required. “I think the technology is ready and we already have the knowledge, but the main problem is having the focus,” says Prof. Saydam, who is organizing an International Future Mining Conference in December 2021 that will feature former NASA astronaut Pamela Melroy and Honeybee Robotics vice-president Kris Zacny.
+
+                “It’s a bigger question: ‘Why don’t we do that already on earth? Why are we still using human beings for physical work in mining here?’ We have huge experience in mining, but still heavily depend on humans. </p>
+        </div>
+    </div>
+    <div class="mars_route">
+    </div>
+
+    
+</body>
+<footer>
+    <div class="footer-wrapper">
+       <div class="footer-col1">
+            <p> Call us: 076 890 89 89</p>
+            <p>For more info: info@voyagez.com</p>
+            <p>&#169 Copyright 2021</p>
+       </div>
+       <div class="socials">
+            <a href="index.html"><h1>Voyage|Z</h1></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-logo.png"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.png"></a>
+       </div>
+       <div class="customer-form">
+            <h3>Sign up for our Newsletter!</h3>
+            <form>
+            <label for="email"></label><br>
+            <input type="text" placeholder="joe@outlook.com"><br>
+            <button type="submit">Notify me</button>
+            </form>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <title>Voyage Z</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale =1">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apollo.html">Apollo Mission</a></li>
+            <li><a href="mars.html">Mars Mission</a></li>
+            <li><a href="next.html">Whats Next</a></li>
+            <li><a href="astronautprofile.html">Our Astronauts</a></li>
+            <li><a href="shop.html">Merchandise</a></li>
+            <li><a href="contact.html">Contact us</a></li>   
+        </ul>
+        </nav>
+    </div>
+    <div id="menubutton">
+        <img src="images/ham.png" id="menu">
+    </div>
+
+    <script>
+        var menubutton = document.getElementById("menubutton")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+
+        menubutton.onclick = function() {
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px"
+                menu.src = "images/ham.png"
+            }
+        }
+    </script>
+    <video class="apolloBG" poster="images/poster.jpg" autoplay muted loop>
+        <source src="images/apollovid.mp4" type="video/mp4">
+    </video>
+    <div class="apollohome">
+        <h1>The Apollo 11</h1>
+    <div class="apollohome_lower">
+        <p>The historic Apollo 11 Launch that changed space exploration forever. Launched in the United States of America and announced by President John F. Kennedy. It is the single largest space event that set the stage for future NASA launches and "took off" the space exploration desire. One small step for a man, one giant leap for mankind!</p>
+        <a href="https://www.youtube.com/watch?v=OCjhCL2iqlQ" target="#">Watch video</a>
+    </div>
+    <div class="apollo_arrow">
+        <a href="#apollo_text_wrapper"><img src="images/webb arrow.png"></a>
+    </div>
+    </div>
+    <div id="apollo_text_wrapper">
+        <h1>Background information</h1>
+        <div class="apollo_text">
+            <p>Mission Objective
+            The primary objective of Apollo 11 was to complete a national goal set by President John F. Kennedy on May 25, 1961: perform a crewed lunar landing and return to Earth.
+            
+            Additional flight objectives included scientific exploration by the lunar module, or LM, crew; deployment of a television camera to transmit signals to Earth; and deployment of a solar wind composition experiment, seismic experiment package and a Laser Ranging Retroreflector. During the exploration, the two astronauts were to gather samples of lunar-surface materials for return to Earth. They also were to extensively photograph the lunar terrain, the deployed scientific equipment, the LM spacecraft, and each other, both with still and motion picture cameras. This was to be the last Apollo mission to fly a "free-return" trajectory, which would enable a return to Earth with no engine firing, providing a ready abort of the mission at any time prior to lunar orbit insertion.
+            
+            Mission Highlights
+            
+            Apollo 11 launched from Cape Kennedy on July 16, 1969, carrying Commander Neil Armstrong, Command Module Pilot Michael Collins and Lunar Module Pilot Edwin "Buzz" Aldrin into an initial Earth-orbit of 114 by 116 miles. An estimated 650 million people watched Armstrong's televised image and heard his voice describe the event as he took "...one small step for a man, one giant leap for mankind" on July 20, 1969.
+            Two hours, 44 minutes and one-and-a-half revolutions after launch, the S-IVB stage reignited for a second burn of five minutes, 48 seconds, placing Apollo 11 into a translunar orbit. The command and service module, or CSM, Columbia separated from the stage, which included the spacecraft-lunar module adapter, or SLA, containing the lunar module, or LM, Eagle. After transposition and jettisoning of the SLA panels on the S-IVB stage, the CSM docked with the LM. The S-IVB stage separated and injected into heliocentric orbit four hours, 40 minutes into the flight.
+            
+            The first color TV transmission to Earth from Apollo 11 occurred during the translunar coast of the CSM/LM. Later, on July 17, a three-second burn of the SPS was made to perform the second of four scheduled midcourse corrections programmed for the flight. The launch had been so successful that the other three were not needed.
+            
+            On July 18, Armstrong and Aldrin put on their spacesuits and climbed through the docking tunnel from Columbia to Eagle to check out the LM, and to make the second TV transmission.</p>
+        </div>
+    </div>
+    <div class="apollo_route">
+    </div>
+
+    
+</body>
+<footer>
+    <div class="footer-wrapper">
+       <div class="footer-col1">
+            <p> Call us: 076 890 89 89</p>
+            <p>For more info: info@voyagez.com</p>
+            <p>&#169 Copyright 2021</p>
+       </div>
+       <div class="socials">
+            <a href="index.html"><h1>Voyage|Z</h1></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-logo.png"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.png"></a>
+       </div>
+       <div class="customer-form">
+            <h3>Sign up for our Newsletter!</h3>
+            <form>
+            <label for="email"></label><br>
+            <input type="text" placeholder="joe@outlook.com"><br>
+            <button type="submit">Notify me</button>
+            </form>
+        </div>
+    </div>
+</footer>
+</html>

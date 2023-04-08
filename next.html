@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Voyage Z</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale =1">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apollo.html">Apollo Mission</a></li>
+            <li><a href="mars.html">Mars Mission</a></li>
+            <li><a href="next.html">Whats Next</a></li>
+            <li><a href="astronautprofile.html">Our Astronauts</a></li>
+            <li><a href="shop.html">Merchandise</a></li>
+            <li><a href="contact.html">Contact us</a></li>   
+        </ul>
+        </nav>
+    </div>
+    <div id="menubutton">
+        <img src="images/ham.png" id="menu">
+    </div>
+
+    <script>
+        var menubutton = document.getElementById("menubutton")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+
+        menubutton.onclick = function() {
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px"
+                menu.src = "images/ham.png"
+            }
+        }
+    </script>
+    <video class="apolloBG" poster="images/poster.jpg" autoplay muted loop>
+        <source src="images/nextvid.mp4" type="video/mp4">
+    </video>
+    <div class="apollohome">
+        <h1>What's next?</h1>
+    <div class="apollohome_lower">
+        <p>Space exploration has gone beyond our expectations, the future may lie on another planet and maybe with other forms of life. There are many exciting and new projects for the future that will change the way we live!</p>
+        <a href="https://youtu.be/vN_JDIxRL7U" target="#">Watch video</a>
+    </div>
+    <div class="apollo_arrow">
+        <a href="#apollo_text_wrapper"><img src="images/webb arrow.png"></a>
+    </div>
+    </div>
+    <div id="apollo_text_wrapper">
+        <h1>Background information</h1>
+        <div class="apollo_text">
+            <p>FROM STAR TREK–LIKE medical scanners to concepts for off-planet agriculture like in The Expanse, science fiction has often inspired actual research at NASA and other space agencies. This week, researchers are meeting at a virtual conference for the NASA Innovative Advanced Concepts (NIAC) program to brainstorm and investigate sci-fi-like ideas, some of which may very well shape the missions of the next 20 years.
+
+                A drone helicopter hopping about a Martian crater or a lunar rover that maps moon ice might have seemed far-fetched a decade ago, but the copter actually flew earlier this year, and the rover is in the planning stages. Now the conference organizers have solicited proposals for more exploratory projects, a few of which the agency might eventually fund. “We invest in long-term, far-out technologies, and most of them probably won’t work. The ones that do might change everything. It’s high risk, high payoff, almost like a venture capital investment portfolio,” says Jason Derleth, the NIAC program executive.
+                
+                The program isn’t focused on incremental developments but instead seeks game-changing technologies, ones that are 10 times better than the state of the art, Derleth says. He likens it to the Pentagon’s Defense Advanced Research Projects Agency, which also explores extremely speculative concepts but developed the precursor to the modern internet, among other innovations.
+                
+                The annual conference, which continues through Thursday, September 23, is publicly viewable on NIAC’s livestream. Some of the proposals discussed so far—such as for new ways to launch foldable space stations or astronaut habitats, or to extract resources from other worlds—revolve around the understanding that, for lengthy space voyages, you have to make the most of every rocket launch.</p>
+        </div>
+    </div>
+    <div class="next_route">
+    </div>
+
+    
+</body>
+<footer>
+    <div class="footer-wrapper">
+       <div class="footer-col1">
+            <p> Call us: 076 890 89 89</p>
+            <p>For more info: info@voyagez.com</p>
+            <p>&#169 Copyright 2021</p>
+       </div>
+       <div class="socials">
+            <a href="index.html"><h1>Voyage|Z</h1></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-logo.png"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.png"></a>
+       </div>
+       <div class="customer-form">
+            <h3>Sign up for our Newsletter!</h3>
+            <form>
+            <label for="email"></label><br>
+            <input type="text" placeholder="joe@outlook.com"><br>
+            <button type="submit">Notify me</button>
+            </form>
+        </div>
+    </div>
+</footer>
+</html>
